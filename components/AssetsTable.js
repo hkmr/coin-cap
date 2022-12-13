@@ -41,9 +41,11 @@ const AssetsTable = (props) => {
                                 </td>
                                 <td>{Number(asset.priceUsd).toFixed(2)}</td>
                                 <td>{Number(asset.marketCapUsd).toFixed(2)}</td>
-                                <td>{asset.vwap24Hr}</td>
+                                <td>{Number(asset.vwap24Hr).toFixed(2)}</td>
                                 <td>{Number(asset.supply).toFixed(2)}</td>
-                                <td>{asset.volumeUsd24Hr}</td>
+                                <td>
+                                    {Number(asset.volumeUsd24Hr).toFixed(2)}
+                                </td>
                                 <td
                                     className={
                                         change < 0
